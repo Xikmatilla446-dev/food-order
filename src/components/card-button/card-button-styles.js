@@ -1,32 +1,31 @@
 import styled, {css} from "styled-components";
 
 
-export const Button = styled.button`
+export const CardButtonStyles = styled.button`
   
-  width: 10vw;
-   height: 4vw;
+  width: 8vw;
+   height: 3vw;
    padding: 10px;
    box-sizing: border-box;
    outline: none;
    font-family: Arial;
-   font-size: 1.2rem;
-   border: 1px solid #ff6c16;
-   background: #ff6c16;
-   color: white;
+   font-size: .8rem;
+   color: black;
+   background-color: white;
+   border: 2px dashed coral;
    cursor: pointer;
-   transition:transform 1.5s ease-out;
+      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
    transition:border-top-left-radius .5s ease-out;
-   transition:border-bottom-right-radius .5s ease-in-out;
-  
+   transition:border-bottom-right-radius .8s ease-in-out;
+   transition:transform 1.5s ease-out;
     &:hover{
-    border-top: 1px solid red;
+    border: 2px dashed coral;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-bottom: 1px solid blue;
     }
     &:active{
     transform: scale(1.1);
-    margin-left: 5px;
+    
    
     }
     

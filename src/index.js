@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'mobx-react';
+
+import { setupRootStore } from "./models/store/index";
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+const { rootTree } = setupRootStore();
+
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Provider rootTree={rootTree}>
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    </Provider>,
   document.getElementById('root')
 );
 

@@ -5,11 +5,12 @@ import banner from "../../static/photo/fruit-food.jpg";
 export const DivBanner = styled.div`
   position: absolute;
    margin-top: 15vw;
-   margin-left: 30%;
+   margin-left: 25%;
    transform: rotateZ(180deg);
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap: 3px;
+   
    
 
   

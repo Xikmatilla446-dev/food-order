@@ -12,6 +12,12 @@ export const InputSearch = styled.input`
    border: 1px solid #181830;
    color: #151515;   
    
+   &:hover{
+  
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: help;
+   }
   
    
    
