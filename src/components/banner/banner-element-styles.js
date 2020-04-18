@@ -22,7 +22,7 @@ export const Banner = styled.div`
    
    $sub-color: grey; 
    $main-color: #3c46a9;
-   margin-top: 80px;
+   top: 80px;
    background-color: #3c46a9;
    width: 100%; 
    height: 32vw;

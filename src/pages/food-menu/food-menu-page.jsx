@@ -34,4 +34,4 @@ const FoodMenuPage = ( {rootTree:{Users}}) => {
     )
 };
 
-export default inject('rootTree')(FoodMenuPage);
+export default inject('rootTree')(observer(FoodMenuPage));

@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import NavbarComponent from './components/navbar/navbar-component';
+// import NavbarComponent from './components/navbar/navbar-component';
 import BannerComponent from "./components/banner/banner-components";
 import PopularSection from "./components/popular-section/popular-section-place";
 import {observer, inject} from "mobx-react";
 import FoodMenuPage from "./pages/food-menu/food-menu-page";
+import NavbarComponent from "./components/navbar-menu/navbar-cmponent";
 
 
 

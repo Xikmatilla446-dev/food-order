@@ -1,17 +1,48 @@
 import styled, {css} from "styled-components";
 
+export const Nav = styled.nav`
+   
+   
 
-export const Menu = styled.div`
-   
-   $sub-color: grey; 
-   $main-color: #3c46a9;
-   
-   background-color: #3c46a9;
-   width: 100%; 
+    background-color: #181830;
+    height: 80px;
+    width: 100%;
+    
+  
+  
+  
+  
+
 
 `;
 
-export const Brand = styled.li`
+export const Label2 = styled.label`
+   
+   
+
+`;
+export const Input = styled.input`
+   
+  
+
+
+`;
+export const Label = styled.label`
+   
+   color: white;
+   font-size: 35px;
+   padding: 50px 100px;
+   box-sizing: border-box;
+   font-weight: bold;
+   
+  
+
+
+`;
+
+
+
+export const Brand = styled.span`
    
    
     background-color: #181830;
@@ -19,14 +50,14 @@ export const Brand = styled.li`
     color: #ffff;
     border: 1px solid transparent;
     cursor: pointer;
-    padding: 5px 30% 0 5%;
     display: inline-block;
     white-space: nowrap;
-    text-space: 5px;
+    margin-top: 20px;
+    
     
     img{
     width: 100px;
-    height: 45px;
+    height: 40px;
     padding: 0;
     box-sizing: border-box;
     }
@@ -35,34 +66,135 @@ export const Brand = styled.li`
 
 export const Ul = styled.ul`
    
-   $sub-color: grey; 
-   $main-color: black;
-  
-    background-color: #181830;
-    
+   float: right;
+   margin-right: 80px;
     
   
-  
-    
 
 
 `;
 
 export const Li = styled.li`
-   
-   $sub-color: grey; 
-   $main-color: black;
   
-    background-color: #181830;
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-    color: #ffff;
-    border: 1px solid transparent;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+   padding: 0px 10px;
+  position: relative;
+  color: #ffff;
+  border: 1px solid transparent;
   
-     &:hover span{
+  &:hover span{
       display: inline-block;
     }  
+   
+
+`;
+
+
+export const A = styled.a`
+   color: white;
+   font-size: 17px;
+   text-transform: uppercase;
+   padding: 7px 13px;
+   border-radius: 3px;
+   
+   &:hover,.active{
+   
+   background-color: #1b9bff;
+   transition: .5s;
+   }
+  
+
+
+`;
+
+
+export const LeafOne = styled.span`
+   
+      
+    display: none;
+    position: absolute;
+    background-color: #5FA11C;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: -23px;
+    margin-top: 1.7vw;
+    
+    transition:transform 1.5s ease-out;
+    &:hover{
+    
+    }
+    &:active{
+    transform: scale(1.1);
+    
+   
+    }
+  
+    
+  
+
+`;
+export const LeafTwo = styled.span`
+   
+      
+    display: none;
+    position: absolute;
+    background-color: #5FA11C;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: -20px;
+    margin-top: 3.1vw;
+    transform: rotateZ(90deg);
+    transition: all 1s linear;
+    
+    transition:transform 1.5s ease-out;
+    &:hover{
+    
+    }
+    &:active{
+    transform: scale(1.1);
+    
+   
+    }
+  
+    
+  
+
+`;
+
+export const LeafThree = styled.span`
+   
+      
+    display: none;
+    position: absolute;
+    background-color: #5FA11C;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: -35px;
+    margin-top: 2.6vw;
+    transform: rotateZ(120deg);
+    transition: all 1s linear;
+    
+    transition:transform 1.5s ease-out;
+    &:hover{
+    
+    }
+    &:active{
+    transform: scale(1.1);
+    
+   
+    }
+  
     
   
 
@@ -98,95 +230,7 @@ export const IlIcon = styled.li`
   
 
 `;
-export const LeafOne = styled.span`
-   
-      
-    display: none;
-    position: absolute;
-    background-color: #5FA11C;
-    border: 1px solid transparent;
-    width: 15px;
-    height: 15px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin-left: -20px;
-    margin-top: -1vw;
-    
-    transition:transform 1.5s ease-out;
-    &:hover{
-    
-    }
-    &:active{
-    transform: scale(1.1);
-    
-   
-    }
-  
-    
-  
 
-`;
-export const LeafTwo = styled.span`
-   
-      
-    display: none;
-    position: absolute;
-    background-color: #5FA11C;
-    border: 1px solid transparent;
-    width: 15px;
-    height: 15px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin-left: -18px;
-    margin-top: 5px;
-    transform: rotateZ(90deg);
-    transition: all 1s linear;
-    
-    transition:transform 1.5s ease-out;
-    &:hover{
-    
-    }
-    &:active{
-    transform: scale(1.1);
-    
-   
-    }
-  
-    
-  
-
-`;
-
-export const LeafThree = styled.span`
-   
-      
-    display: none;
-    position: absolute;
-    background-color: #5FA11C;
-    border: 1px solid transparent;
-    width: 15px;
-    height: 15px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin-left: -35px;
-    margin-top: -2px;
-    transform: rotateZ(120deg);
-    transition: all 1s linear;
-    
-    transition:transform 1.5s ease-out;
-    &:hover{
-    
-    }
-    &:active{
-    transform: scale(1.1);
-    
-   
-    }
-  
-    
-  
-
-`;
 
 
 export const IlA = styled.a`
