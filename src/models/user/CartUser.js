@@ -17,6 +17,11 @@ const UserCard = types.model('UserCard', {
 
 
 
+})).views(self => ({
+
+    totalFood() {
+        return self.items.length;
+    }
 }));
 
 export default UserCard;

@@ -5,6 +5,8 @@ import CardButton from "../card-button/card-button-component";
 
 const CardfoodComponent = ({item, handlerFoodToCart}) => {
 
+
+
     return (
 
         <CardSection>
@@ -14,7 +16,7 @@ const CardfoodComponent = ({item, handlerFoodToCart}) => {
                 <p>Idlli are a type of savoury rice cake, or </p>
                 <CardButtonHeader>
                     <PriceText>${item.price}</PriceText>
-                    <CardButton onClick={() => handlerFoodToCart(item)} >Order Now</CardButton>
+                   { handlerFoodToCart ? (<CardButton onClick={() => handlerFoodToCart(item)} >Order Now</CardButton>) : null }
 
                 </CardButtonHeader>
 
