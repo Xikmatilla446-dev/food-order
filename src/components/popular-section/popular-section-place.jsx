@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { SectionPopular, SectionText, SectionCard} from "./popular-section-styles";
 import content from './content';
 import CardfoodComponent from "../card/card-food-component";

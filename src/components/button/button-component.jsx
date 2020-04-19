@@ -2,10 +2,12 @@ import React from 'react';
 import {Button} from "./button-element-styles";
 
 
-const ButtonComponent = ({children}) => {
+const ButtonComponent = ({width,children}) => {
 
     return (
-        <Button>{children}</Button>
+        <Button >
+
+            {children}</Button>
     )
 };
 

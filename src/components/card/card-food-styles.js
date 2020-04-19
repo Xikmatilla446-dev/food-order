@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import imgPhoto from '../../static/photo/food-eggs.jpeg';
 
 export const Img = styled.img`

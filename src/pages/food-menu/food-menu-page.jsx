@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {observer, inject} from "mobx-react";
 
 import { FoodSection } from "./food-menu-styles";
@@ -8,7 +8,7 @@ import CardfoodComponent from "../../components/card/card-food-component";
 
 
 const FoodMenuPage = ( {rootTree:{Users}}) => {
-    debugger
+
     const handlerFoodToCart = (item) => {
         debugger
 

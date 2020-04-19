@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import banner from "../../static/photo/fruit-food.jpg";
 
 

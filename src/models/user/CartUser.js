@@ -4,6 +4,7 @@ import ItemCart from './ItemCart';
 
 const UserCard = types.model('UserCard', {
 
+    hidden: false,
     items: types.array(ItemCart),
 
 
@@ -12,6 +13,12 @@ const UserCard = types.model('UserCard', {
     addFood(item){
 
         self.items.push(item);
+
+    },
+
+    cartHidden(){
+
+        self.hidden = !self.hidden
 
     }
 

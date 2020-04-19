@@ -1,11 +1,10 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 
 export const Button = styled.button`
   
-  width: 10vw;
    height: 4vw;
-   padding: 10px;
+   width: ${props => props.width ? '10vw' : 'auto'};
    box-sizing: border-box;
    outline: none;
    font-family: Arial;
@@ -14,6 +13,15 @@ export const Button = styled.button`
    background: #ff6c16;
    color: white;
    cursor: pointer;
+   min-width: 11vw;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+
    transition:transform 1.5s ease-out;
    transition:border-top-left-radius .5s ease-out;
    transition:border-bottom-right-radius .5s ease-in-out;

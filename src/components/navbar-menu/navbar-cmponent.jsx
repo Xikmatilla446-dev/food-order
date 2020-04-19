@@ -1,14 +1,17 @@
 import React from 'react';
-import styled, {ThemeProvider} from "styled-components";
-
 
 import { Nav,Label,Label2,Brand, Input, Ul, Li, IconA, IlA, IlIcon, LeafTwo, LeafOne, LeafThree} from "./navbar-styles";
 import './navbar.css';
 import logo from "../../static/photo/logo.png";
 import CardIcon from "../cart-icon/card-icon-component";
+import CartDropdown from "../cart-dropdown/cart-dropdown-component";
+import {inject, observer} from "mobx-react";
 
 
-const NavbarComponent = () => {
+const NavbarComponent = ({rootTree: {Users}}) => {
+
+
+  const hidden = Users.userCart.hidden;
 
 
     return(
@@ -29,6 +32,12 @@ const NavbarComponent = () => {
                 <IlIcon><IconA><CardIcon/></IconA></IlIcon>
 
             </Ul>
+            {
+                !hidden ? null : <CartDropdown/>
+
+            }
+
+
 
         </Nav>
 
@@ -36,4 +45,4 @@ const NavbarComponent = () => {
     )
 };
 
-export default NavbarComponent;
+export default inject('rootTree')(observer(NavbarComponent));

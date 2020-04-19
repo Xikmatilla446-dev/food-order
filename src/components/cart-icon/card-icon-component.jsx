@@ -7,8 +7,16 @@ import {inject, observer} from "mobx-react";
 const CardIcon = ({rootTree:{Users}}) => {
 
 
+
+    const handlerCartHidden = () => {
+        debugger
+        Users.userCart.cartHidden();
+
+
+    };
+
     return(
-        <CartIconDiv>
+        <CartIconDiv onClick={handlerCartHidden}>
             <ShoppingIcon className="shopping-icon" />
             <Count className="item-count">{Users.userCart.totalFood()}</Count>
         </CartIconDiv>

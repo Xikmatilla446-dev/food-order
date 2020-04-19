@@ -9,21 +9,26 @@ import NavbarComponent from "./components/navbar-menu/navbar-cmponent";
 
 
 
+class App extends React.Component {
+constructor(props: UserCard){
+    super(props);
 
-const App = (props) => {
-
-    const { rootTree} =props;
-  return (
-    <div className="App">
-
-      <NavbarComponent/>
-        <BannerComponent/>
-      <PopularSection/>
-        <hr/>
-        <br/>
-        <FoodMenuPage/>
-    </div>
-  );
 }
+
+    render() {
+
+
+        return (
+                <div className="App">
+                    <NavbarComponent/>
+                    <BannerComponent/>
+                    <PopularSection/>
+                    <FoodMenuPage/>
+                </div>
+         )
+
+
+    }
+};
 
 export default inject('rootTree')(observer(App));
