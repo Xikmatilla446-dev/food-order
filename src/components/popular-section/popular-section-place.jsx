@@ -11,13 +11,13 @@ const PopularSection = () => {
 
 
         return (
-        <SectionPopular>
+        <SectionPopular className="section-popular">
             <SectionText>
                 <h1>Popular This Month In Your City</h1>
                 <p>The easiest way to get your favourite food</p>
             </SectionText>
 
-            <SectionCard>
+            <SectionCard className="section-card">
                 {content.map((item, index) => (
                     <CardfoodComponent key={index}
                                        item={item}/>

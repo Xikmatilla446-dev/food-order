@@ -5,7 +5,7 @@ import {Button} from "./button-element-styles";
 const ButtonComponent = ({width,children}) => {
 
     return (
-        <Button >
+        <Button className="button-component"  width={width}>
 
             {children}</Button>
     )

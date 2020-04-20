@@ -31,7 +31,7 @@ export const Label = styled.label`
    
    color: white;
    font-size: 35px;
-   padding: 50px 100px;
+   padding: 50px 50px;
    box-sizing: border-box;
    font-weight: bold;
    
@@ -56,7 +56,7 @@ export const Brand = styled.span`
     
     
     img{
-    width: 100px;
+    width: auto;
     height: 40px;
     padding: 0;
     box-sizing: border-box;

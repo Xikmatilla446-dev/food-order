@@ -36,11 +36,7 @@ export const PriceText = styled.p`
 export const CardButtonHeader = styled.div`
      width: 100%;
      margin-top: 3vw;
-     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 12em;
-    padding: 0 20px 20px 0;
+     height: 8vw;
     
   
 `;
@@ -62,7 +58,7 @@ export const Figcaption = styled.figcaption`
 `;
 export const CardSection = styled.section`
    
-   width: 30vw;
+   width: 100%;
    background: white;
    padding: 0;
    box-sizing: border-box;

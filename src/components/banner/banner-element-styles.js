@@ -27,7 +27,7 @@ export const Banner = styled.div`
    width: 100%; 
    height: 32vw;
    background-image: url("${banner}");
-   background-repeat: initial;
+   background-repeat: no-repeat;
    background-size: cover;
    backdrop-filter: drop-shadow(5vw);
    transform: rotateZ(180deg);

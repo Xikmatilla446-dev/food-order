@@ -7,10 +7,10 @@ import ButtonComponent from "../button/button-component";
 const BannerComponent = () => {
 
     return (
-        <Banner props={banner}>
+        <Banner className="banner-component" props={banner}>
             <DivBanner>
                 <SearchInput placeholder="I would like to eat"/>
-                <ButtonComponent width={10}>Search food</ButtonComponent>
+                <ButtonComponent width={"true"}>Search food</ButtonComponent>
             </DivBanner>
 
         </Banner>

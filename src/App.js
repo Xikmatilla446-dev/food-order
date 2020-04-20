@@ -7,6 +7,7 @@ import {observer, inject} from "mobx-react";
 import FoodMenuPage from "./pages/food-menu/food-menu-page";
 import NavbarComponent from "./components/navbar-menu/navbar-cmponent";
 
+import { GlobalStyle } from "./global-styles/global.styles";
 
 
 class App extends React.Component {
@@ -19,7 +20,8 @@ constructor(props: UserCard){
 
 
         return (
-                <div className="App">
+                <div >
+                    <GlobalStyle/>
                     <NavbarComponent/>
                     <BannerComponent/>
                     <PopularSection/>
