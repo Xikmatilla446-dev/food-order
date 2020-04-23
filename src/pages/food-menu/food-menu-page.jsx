@@ -10,7 +10,6 @@ import CardfoodComponent from "../../components/card/card-food-component";
 const FoodMenuPage = ( {rootTree:{Users}}) => {
 
     const handlerFoodToCart = (item) => {
-        debugger
 
         Users.userCart.addFood(item);
     };

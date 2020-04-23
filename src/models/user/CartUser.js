@@ -10,9 +10,26 @@ const UserCard = types.model('UserCard', {
 
 }).actions(self => ({
 
-    addFood(item){
+    addFood(NewItem){
 
-        self.items.push(item);
+
+        const CartItem = self.items;
+
+        CartItem.filter((cartItem) => {
+            return cartItem.id == NewItem.id
+            debugger
+        });
+        debugger
+        if (CartItem && CartItem.length > 0){
+            debugger
+            return self.items.map(cartItem=>
+                cartItem.id === NewItem.id
+                    ? {...cartItem, quantity: cartItem.quantity + 1 }
+                    : cartItem
+            )
+        }else { self.items.push(NewItem); }
+
+
 
     },
 
