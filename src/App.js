@@ -14,6 +14,7 @@ import NavbarComponent from "./components/navbar-menu/navbar-cmponent";
 
 import { GlobalStyle } from "./global-styles/global.styles";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up";
+import CheckoutPage from "./pages/checkout/checkout-page-component";
 
 
 class App extends React.Component {
@@ -34,6 +35,8 @@ constructor(props: UserCard){
                         <Route exact  path='/' component={PopularSection} />
                         <Route exact  path='/food-menu' component={FoodMenuPage} />
                         <Route exact path='/signin' component={SignInAndSignUpPage}/>
+                        <Route exact path='/checkout' component={CheckoutPage} />
+
                     </Switch>
                 </div>
          )

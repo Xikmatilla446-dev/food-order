@@ -7,7 +7,6 @@ const UserCard = types.model('UserCard', {
 
     hidden: false,
     items: types.array(ItemCart),
-    quantityTest: false
 
 
 }).actions(self => ({
@@ -26,7 +25,8 @@ const UserCard = types.model('UserCard', {
 })).views(self => ({
 
     get totalFood() {
-        return self.items.length;
+        return self.items.reduce((accumalatedQuantity, cartItem) =>
+            accumalatedQuantity + cartItem.quantity, 0);
     }
 }));
 
