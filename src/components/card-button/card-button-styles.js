@@ -17,6 +17,7 @@ export const CardButtonStyles = styled.button`
   letter-spacing: 0.5px;
   padding: 10px;
   font-weight: bolder;
+  font-size: 1vw;
   cursor: pointer;
   display: flex;
   justify-content: center;

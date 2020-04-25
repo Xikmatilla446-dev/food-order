@@ -7,9 +7,9 @@ export const Img = styled.img`
    background-size: cover;
    background-repeat: no-repeat;
    width: 100%;
-   height: 20vw;
+   height: 15vw;
    background-position: center;
-   
+
    transition:border-top-left-radius .5s ease-out;
    transition:border-bottom-right-radius .5s ease-in-out;
    
@@ -36,7 +36,7 @@ export const PriceText = styled.p`
 export const CardButtonHeader = styled.div`
      width: 100%;
      margin-top: 3vw;
-     height: 8vw;
+     height: 5vw;
     
   
 `;
@@ -48,11 +48,16 @@ export const Figcaption = styled.figcaption`
     margin-top: 2vw; 
     padding: 0px 20px;
     box-sizing: border-box;
-    
-   h3{
+    overflow: hidden;
+   h4{
       color: black;
       font-family: Arial;
+      font-size: 1.1vw;
       
+   }
+   p{
+    overflow: hidden;
+    font-size: 1vw;
    }
    
 `;

@@ -12,7 +12,7 @@ const CardfoodComponent = ({item, handlerFoodToCart}) => {
         <CardSection>
             <Img/>
             <Figcaption>
-            <h3>{item.foodCategory}</h3>
+            <h4>{item.foodCategory}</h4>
                 <p>Idlli are a type of savoury rice cake, or </p>
                 <CardButtonHeader>
                     <PriceText>${item.price}</PriceText>

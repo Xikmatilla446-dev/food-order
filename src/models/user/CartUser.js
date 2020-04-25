@@ -1,49 +1,31 @@
-import { types, Instance } from "mobx-state-tree";
+import {getParent, hasParent, onSnapshot, types} from "mobx-state-tree";
 import ItemCart from './ItemCart';
+import { addItemToCart } from "./cart.utils";
 
 
 const UserCard = types.model('UserCard', {
 
     hidden: false,
     items: types.array(ItemCart),
+    quantityTest: false
 
 
 }).actions(self => ({
 
-    addFood(NewItem){
-
-
-        const CartItem = self.items;
-
-        CartItem.filter((cartItem) => {
-            return cartItem.id == NewItem.id
-            debugger
-        });
-        debugger
-        if (CartItem && CartItem.length > 0){
-            debugger
-            return self.items.map(cartItem=>
-                cartItem.id === NewItem.id
-                    ? {...cartItem, quantity: cartItem.quantity + 1 }
-                    : cartItem
-            )
-        }else { self.items.push(NewItem); }
-
-
+     addFood(NewItem) {
+         // debugger
+         self.items = addItemToCart(self.items, NewItem);
 
     },
 
-    cartHidden(){
-
+    cartHidden() {
         self.hidden = !self.hidden
-
     }
-
 
 
 })).views(self => ({
 
-    totalFood() {
+    get totalFood() {
         return self.items.length;
     }
 }));
