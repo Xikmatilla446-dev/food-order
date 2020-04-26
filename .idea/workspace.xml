@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eed7f7a4-5d3f-4535-a0ed-1b4511566e55" name="Default Changelist" comment="" />
+    <list default="true" id="eed7f7a4-5d3f-4535-a0ed-1b4511566e55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/food-category/food-category-component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/food-category/food-category-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-component-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout-component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card-button/card-button-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card-button/card-button-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card-food-component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card-food-component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card-food-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card-food-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/card-icon-component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/card-icon-component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-item-component/cart-component-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-item-component/cart-component-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/popular-section/popular-section-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/popular-section/popular-section-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user/CartUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user/CartUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user/ItemCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user/ItemCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user/cart.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/food-menu/food-menu-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/food-menu/food-menu-page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,19 +32,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/user/ItemCart.js">
+        <entry file="file://$PROJECT_DIR$/src/components/input-search/input-search.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="18">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/input-search/input-search-styles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/button/button-component.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/models/user/cart.utils.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/user/CartUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="216">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
               </folding>
@@ -35,17 +79,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/user/cart.utils.js">
+        <entry file="file://$PROJECT_DIR$/src/components/banner/banner-element-styles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="234">
+              <caret line="14" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/user/user.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/navbar-menu/navbar-cmponent.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="22" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/navbar-menu/navbar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2268">
+              <caret line="126" column="5" selection-end-line="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/navbar-menu/navbar-styles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="2" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -166,13 +246,26 @@
               <item name="food-order-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="food-order-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="food-order-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="food-order-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="food-order-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="food-order-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="food-order-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="food-order-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -269,12 +362,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145725000" />
+    <option name="totallyTimeSpent" value="145320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23769872" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2339137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -289,7 +383,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -575,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/user/ItemCart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="288">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -673,8 +767,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/user/CartUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="216">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding>
             <element signature="e#0#72#0" expanded="true" />
           </folding>
@@ -682,11 +776,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/user/cart.utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -4,12 +4,20 @@ import { CartDropdownStyles, CartItemStyles, SpanMessage } from "./cart-dropdown
 import {inject, observer} from "mobx-react";
 import CartItem from "../cart-item-component/cart-item-component";
 import ButtonComponent from "../button/button-component";
+import { withRouter } from "react-router-dom";
 
 
-const CartDropdown = ({rootTree:{Users}}) => {
+const CartDropdown = ({rootTree:{Users}, history}) => {
 
     const cartItems = Users.userCart.items;
+    debugger
 
+
+    const handlerCartHidden = () => {
+        debugger
+        Users.userCart.cartHidden();
+
+    };
 
 
     return(
@@ -28,7 +36,11 @@ const CartDropdown = ({rootTree:{Users}}) => {
 
             </CartItemStyles>
 
-            <ButtonComponent onClick={()=> { alert("GO TO CHECKOUT")}}>GO TO CHECKOUT</ButtonComponent>
+            <ButtonComponent onClick={()=> {
+                handlerCartHidden()
+                history.push('/checkout');
+
+            }}>GO TO CHECKOUT</ButtonComponent>
         </CartDropdownStyles>
 
 
@@ -36,4 +48,4 @@ const CartDropdown = ({rootTree:{Users}}) => {
 
 };
 
-export default inject('rootTree')(observer(CartDropdown));
+export default inject('rootTree')(observer(withRouter(CartDropdown)));
