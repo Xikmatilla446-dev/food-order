@@ -18,7 +18,16 @@
 }
 
 
+.option-link{
 
+    color: #ffff;
+    cursor: pointer;
+}
+
+.option-link:hover {
+    color: red;
+
+}
 
 .checkbtn {
 

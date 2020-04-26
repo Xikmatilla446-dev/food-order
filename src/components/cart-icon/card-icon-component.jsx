@@ -18,7 +18,7 @@ const CardIcon = ({rootTree:{Users}}) => {
     return(
         <CartIconDiv onClick={handlerCartHidden}>
             <ShoppingIcon className="shopping-icon" />
-            <Count className="item-count">{Users.userCart.totalFood()}</Count>
+            <Count className="item-count">{Users.userCart.totalFood}</Count>
         </CartIconDiv>
 
     )

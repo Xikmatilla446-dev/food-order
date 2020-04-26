@@ -232,24 +232,6 @@ export const IlIcon = styled.li`
 `;
 
 
-
-export const IlA = styled.a`
-   
-   $sub-color: grey;
-   padding: 0; 
-   $main-color: black;
-  
-  
-    color: #ffff;
-    cursor: pointer;
-    
-   &:hover {
-   color: red;
-   
-   }
-  
-
-`;
 export const IconA = styled.a`
    
     color: black;

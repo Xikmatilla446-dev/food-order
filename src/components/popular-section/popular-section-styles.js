@@ -33,8 +33,8 @@ export const SectionCard= styled.div`
     
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: .2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .3em;
     padding: 5px 20px;
     cursor: inherit;
   

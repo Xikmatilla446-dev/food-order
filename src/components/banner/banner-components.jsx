@@ -10,7 +10,7 @@ const BannerComponent = () => {
         <Banner className="banner-component" props={banner}>
             <DivBanner>
                 <SearchInput placeholder="I would like to eat"/>
-                <ButtonComponent width={"true"}>Search food</ButtonComponent>
+                <ButtonComponent width="10vw">Search food</ButtonComponent>
             </DivBanner>
 
         </Banner>

@@ -1,5 +1,6 @@
-import { types, Instance } from "mobx-state-tree";
+import {getParent, hasParent, onSnapshot, types} from "mobx-state-tree";
 import ItemCart from './ItemCart';
+import { addItemToCart } from "./cart.utils";
 
 
 const UserCard = types.model('UserCard', {
@@ -10,24 +11,22 @@ const UserCard = types.model('UserCard', {
 
 }).actions(self => ({
 
-    addFood(item){
-
-        self.items.push(item);
+     addFood(NewItem) {
+         // debugger
+         self.items = addItemToCart(self.items, NewItem);
 
     },
 
-    cartHidden(){
-
+    cartHidden() {
         self.hidden = !self.hidden
-
     }
-
 
 
 })).views(self => ({
 
-    totalFood() {
-        return self.items.length;
+    get totalFood() {
+        return self.items.reduce((accumalatedQuantity, cartItem) =>
+            accumalatedQuantity + cartItem.quantity, 0);
     }
 }));
 

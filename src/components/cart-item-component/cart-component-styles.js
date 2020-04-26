@@ -38,14 +38,14 @@ export const ItemDetails = styled.div`
     padding: 10px 20px;
     
     
-      span:nth-child(1) {
-      width: 90%;
-      margin-bottom: 15px;
-    }
-
-    span:nth-child(2) {
-      width: 10%;
-    }
+    //  span:nth-child(1) {
+    //  width: 90%;
+    //  margin-bottom: 15px;
+    //}
+    //
+    //span:nth-child(2) {
+    //  width: 10%;
+    //}
 
 `;
 

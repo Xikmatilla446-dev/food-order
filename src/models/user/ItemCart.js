@@ -9,8 +9,20 @@ const ItemCart = types.model('Item', {
     image: types.string,
     quantity: types.number,
     price: types.number,
+    id: types.number
 
-});
+}).actions(self => ({
+
+        increment() {
+            self.quantity = self.quantity + 1;
+        },
+
+        decrement() {
+             self.quantity = self.quantity - 1
+        }
+
+    }))
+;
 
 
 export default ItemCart;

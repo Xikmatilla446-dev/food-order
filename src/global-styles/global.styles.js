@@ -60,6 +60,7 @@ body {
  }
  @media screen and (max-width: 858px){
    
+   
   
    padding: 10px;
   
@@ -69,6 +70,14 @@ body {
 .search-input{
   font-size: 12px;
 
+}
+
+.SignInAndSignUp{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+ 
 }
 
 .button-component{
@@ -123,6 +132,14 @@ body {
  @media screen and (max-width: 500px){
 
 
+
+.SignInAndSignUp{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+ 
+}
 
 
 .search-input{

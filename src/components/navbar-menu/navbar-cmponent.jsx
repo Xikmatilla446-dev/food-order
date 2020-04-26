@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-import { Nav,Label,Label2,Brand, Input, Ul, Li, IconA, IlA, IlIcon, LeafTwo, LeafOne, LeafThree} from "./navbar-styles";
+import { Nav,Label,Label2,Brand, Input, Ul, Li, IconA,  IlIcon, LeafTwo, LeafOne, LeafThree} from "./navbar-styles";
 import './navbar.css';
 import logo from "../../static/photo/serve.png";
 import CardIcon from "../cart-icon/card-icon-component";
@@ -22,15 +23,17 @@ const NavbarComponent = ({rootTree: {Users}}) => {
             </Label2>
             <IlIcon className="cart-icon-mobile"><IconA><CardIcon/></IconA></IlIcon>
 
-            <Label className="logo"><Brand><img src={logo} alt="logo"/></Brand></Label>
+            <Label className="logo">
+                <Link to="/"><Brand><img src={logo} alt="logo"/></Brand></Link></Label>
+
 
             <Ul>
-                <Li><LeafOne/><LeafTwo/><LeafThree/><IlA>Home</IlA></Li>
-                <Li><IlA>Food Menu</IlA></Li>
-                <Li><IlA>Sign up</IlA></Li>
-                <Li><IlA>Sign in</IlA></Li>
-                <Li><IlA>Track Order</IlA></Li>
-                <Li><IlA>My Account</IlA></Li>
+                <Li><LeafOne/><LeafTwo/><LeafThree/><Link className="option-link" to="/">Home</Link></Li>
+                <Li><Link  className="option-link" to="/food-menu">Food Menu</Link></Li>
+                <Li><Link  className="option-link" to="/">Sign up</Link></Li>
+                <Li><Link  className="option-link" to="/signin" >Sign in</Link></Li>
+                <Li><Link  className="option-link" to="/">Track Order</Link></Li>
+                <Li><Link  className="option-link" to="/">My Account</Link></Li>
                 <IlIcon className="cart-icon"><IconA><CardIcon/></IconA></IlIcon>
 
             </Ul>

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Button = styled.button`
   
    height: 4vw;
-   width: ${props => props.width ? "10vw" : 'auto'};
+   width: ${props => props.width ? props.width : 'auto'};
    box-sizing: border-box;
    outline: none;
    font-family: Arial;
