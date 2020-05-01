@@ -7,11 +7,9 @@ import ButtonComponent from "../button/button-component";
 import { withRouter } from "react-router-dom";
 
 
-const CartDropdown = ({rootTree:{Users}, history}) => {
+const CartDropdown = ({history, rootTree:{Users}}) => {
 
     const cartItems = Users.userCart.items;
-    debugger
-
 
     const handlerCartHidden = () => {
         debugger
@@ -24,7 +22,7 @@ const CartDropdown = ({rootTree:{Users}, history}) => {
         <CartDropdownStyles>
                 <CartItemStyles>
                     {
-                    cartItems.length ?
+                    cartItems.length > 0 ?
                         cartItems.map((cartItem, index) =>(
                             <CartItem key={index}
                                       item={cartItem}/>))
@@ -37,7 +35,7 @@ const CartDropdown = ({rootTree:{Users}, history}) => {
             </CartItemStyles>
 
             <ButtonComponent onClick={()=> {
-                handlerCartHidden()
+                handlerCartHidden();
                 history.push('/checkout');
 
             }}>GO TO CHECKOUT</ButtonComponent>
@@ -48,4 +46,4 @@ const CartDropdown = ({rootTree:{Users}, history}) => {
 
 };
 
-export default inject('rootTree')(observer(withRouter(CartDropdown)));
+export default inject('rootTree')(withRouter(observer(CartDropdown)));

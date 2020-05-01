@@ -47,6 +47,7 @@ export const LiCartegory = styled.li`
   text-align: left;
   overflow: hidden;
   cursor: pointer;
+  z-index: 5;
  
  &:active{
  transform: scale(1.1);

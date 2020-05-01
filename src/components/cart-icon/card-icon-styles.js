@@ -7,9 +7,11 @@ export const Count = styled.div`
     font-size: 10px;
     font-weight: bold;
     bottom: 12px;
-    margin-top: 10px;
+    margin-top: -22px;
     margin-left: 2px;
     top: 2px;
+    color: black;
+    font-size: .5rem;
     
 
 

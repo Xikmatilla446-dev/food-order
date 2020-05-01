@@ -1,12 +1,13 @@
 import React from 'react';
+import {inject, observer} from "mobx-react";
 import { Link } from "react-router-dom";
 
-import { Nav,Label,Label2,Brand, Input, Ul, Li, IconA,  IlIcon, LeafTwo, LeafOne, LeafThree} from "./navbar-styles";
-import './navbar.css';
+
 import logo from "../../static/photo/serve.png";
 import CardIcon from "../cart-icon/card-icon-component";
 import CartDropdown from "../cart-dropdown/cart-dropdown-component";
-import {inject, observer} from "mobx-react";
+import { Nav,Label,Label2,Brand, Input, Ul, Li, IconA,  IlIcon, LeafTwo, LeafOne, LeafThree} from "./navbar-styles";
+import './navbar.css';
 
 
 const NavbarComponent = ({rootTree: {Users}}) => {
@@ -21,7 +22,9 @@ const NavbarComponent = ({rootTree: {Users}}) => {
             <Label2 htmlFor="check" className="checkbtn">
                 <i className="fas fa-bars"></i>
             </Label2>
-            <IlIcon className="cart-icon-mobile"><IconA><CardIcon/></IconA></IlIcon>
+            <IlIcon className="cart-icon-mobile">
+                <IconA><CardIcon/></IconA>
+            </IlIcon>
 
             <Label className="logo">
                 <Link to="/"><Brand><img src={logo} alt="logo"/></Brand></Link></Label>
@@ -35,12 +38,12 @@ const NavbarComponent = ({rootTree: {Users}}) => {
                 <Li><Link  className="option-link" to="/">Track Order</Link></Li>
                 <Li><Link  className="option-link" to="/">My Account</Link></Li>
                 <IlIcon className="cart-icon"><IconA><CardIcon/></IconA></IlIcon>
+                {
+                    !hidden ? null : <CartDropdown/>
+
+                }
 
             </Ul>
-            {
-                !hidden ? null : <CartDropdown/>
-
-            }
 
 
 
