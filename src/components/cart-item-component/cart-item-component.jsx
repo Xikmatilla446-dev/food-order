@@ -5,7 +5,6 @@ import { CartItemStyles, Img, ItemDetails } from './cart-component-styles';
 
 
 const CartItem = ({item: {itemName, price, quantity}}) => {
-  debugger
 
 
     return(

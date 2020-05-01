@@ -19,13 +19,12 @@ export const Brand = styled.li`
     color: #ffff;
     border: 1px solid transparent;
     cursor: pointer;
-    padding: 5px 30% 0 5%;
     display: inline-block;
     white-space: nowrap;
     text-space: 5px;
     
     img{
-    width: 100px;
+    width: 45px;
     height: 45px;
     padding: 0;
     box-sizing: border-box;
@@ -53,10 +52,11 @@ export const Li = styled.li`
    $sub-color: grey; 
    $main-color: black;
   
-    background-color: #181830;
+    background-color: transparent;
     display: inline-block;
-    padding: 15px 20px;
+    padding: 0 0.5rem;
     position: relative;
+    line-height: 80px;
     color: #ffff;
     border: 1px solid transparent;
   
@@ -74,6 +74,10 @@ export const IlIcon = styled.li`
    $sub-color: grey; 
    $main-color: black;
   
+    padding: 5px 20px;
+    line-height: 90px;
+    box-sizing: border-box;
+   
     background-color: #ffffff;
     display: inline-block;
     position: relative;
@@ -110,7 +114,7 @@ export const LeafOne = styled.span`
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     margin-left: -20px;
-    margin-top: -1vw;
+    margin-top: 1.8vw;
     
     transition:transform 1.5s ease-out;
     &:hover{
@@ -138,7 +142,7 @@ export const LeafTwo = styled.span`
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     margin-left: -18px;
-    margin-top: 5px;
+    margin-top: 3.5vw;
     transform: rotateZ(90deg);
     transition: all 1s linear;
     
@@ -168,8 +172,8 @@ export const LeafThree = styled.span`
     height: 15px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    margin-left: -35px;
-    margin-top: -2px;
+    margin-left: -33px;
+    margin-top: 2.8vw;;
     transform: rotateZ(120deg);
     transition: all 1s linear;
     

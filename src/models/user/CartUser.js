@@ -24,6 +24,7 @@ const UserCard = types.model('UserCard', {
 
 })).views(self => ({
 
+
     get totalFood() {
         return self.items.reduce((accumalatedQuantity, cartItem) =>
             accumalatedQuantity + cartItem.quantity, 0);
